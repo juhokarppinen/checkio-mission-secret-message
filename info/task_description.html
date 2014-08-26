@@ -1,44 +1,53 @@
-<p>
-    <i>( Describe task in general )</i>
+<p class="story">
+    "Where does a wise man hide a leaf? In the forest.
+    But what does he do if there is no forest? ... He grows a forest to hide it in."<br>
+    -- Gilbert Keith Chesterton
 </p>
 
 <p>
-    Sum two passed ints
-</p>
-
-<p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
-</p>
-
-<p><i>( Explain input and output values )</i></p>
-<p>
-    <strong>Input: </strong> Two arguments. Both are int
+    How to hide a message and send it without addresses?
+    You can use newspapers. Even if someone will find that occasionally we can say that is paranoia and conspiracy
+    theory.
+    The simplest way to hide a message is to use capital letters.
+    Let's find these messages.
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    You are given a text. Gather all capital letters in one word in the order how they appear in the text.
+</p>
+<p>
+    For example: text =
+    "<strong>H</strong>ow are you? <strong>E</strong>h, ok. <strong>L</strong>ow or <strong>L</strong>ower?
+    <strong>O</strong>hhh.",
+    if we will gather all letters, then we get "HELLO".
 </p>
 
+<p>
+    <strong>Input: </strong> A text as a string (unicode).
+</p>
+
+<p>
+    <strong>Output: </strong> The secret message as a string or an empty string.
+</p>
 
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
+
     <p>
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
+find_message("Рow are you? Уh, ok. Low or Lower? Ohhh.") == "HELLO"
+find_message("hello world!") == ""
     </pre>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
+    This is a simple exercise to work with strings: iterate, recognize and concatenate.
 </p>
 
 <p>
     <strong>Precondition:</strong>
-    <i>Constraints for Input</i>
+    0 &lt; len(text) &le; 1000
 </p>
