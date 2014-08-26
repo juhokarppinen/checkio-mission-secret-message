@@ -43,7 +43,12 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210', 'snap.svg_030'],
             var fname = 'checkio';
 
             var checkioInput = data.in;
-            var checkioInputStr = fname + '(' + JSON.stringify(checkioInput) + ')';
+            if (checkioInput) {
+                var checkioInputStr = fname + '(' + JSON.stringify(checkioInput) + ')';
+            }
+            else {
+                checkioInputStr = fname + '("How are You?")';
+            }
 
             var failError = function (dError) {
                 $content.find('.call').html(checkioInputStr);
