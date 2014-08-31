@@ -1,15 +1,14 @@
-
-
-
-
-
-<body data-author="YOUR_NICK">
+<body data-author="bryukh">
 <div class="question-answer">
     <div class="question">
         I have no idea how to start solving this mission
     </div>
     <div class="answer">
-        First hint.
+        To iterate all letters use simple for loop.
+<pre>
+for ch in text:
+    do_something
+</pre>
     </div>
 </div>
 <div class="question-answer">
@@ -17,7 +16,13 @@
         I need some help to proceed with the mission
     </div>
     <div class="answer">
-        Second hint.
+        To check is a letter in uppercase use "<a href="https://docs.python.org/2/library/stdtypes.html#str.isupper">str.isupper</a>" method.
+<pre>
+"A".isupper() == True
+"b".isupper() == False
+variable = "d"
+variable.isupper() == False
+    </pre>
     </div>
 </div>
 <div class="question-answer">
@@ -25,23 +30,14 @@
         I am gone half way through. Need help!
     </div>
     <div class="answer">
-        You can stop by these hints.
-    </div>
-</div>
-<div class="question-answer">
-    <div class="question">
-        I am stuck. I need a small hint.
-    </div>
-    <div class="answer">
-        Or add more than 5.
-    </div>
-</div>
-<div class="question-answer">
-    <div class="question">
-        I tried all I could. Nothing works. SOS
-    </div>
-    <div class="answer">
-        These are just examples for you.
+        And gather all capital letters with simple "+".
+<pre>
+result = ""
+for ch in text:
+    ...
+    result += ch
+</pre>
+
     </div>
 </div>
 
