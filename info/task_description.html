@@ -48,5 +48,6 @@ find_message("hello world!") == ""
 
 <p>
     <strong>Precondition:</strong>
-    0 &lt; len(text) &le; 1000
+    0 &lt; len(text) &le; 1000<br>
+    all(ch in string.printable for ch in text)
 </p>
