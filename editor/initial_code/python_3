@@ -1,7 +1,5 @@
 def find_message(text):
-    """
-        Find a secret message
-    """
+    """Find a secret message"""
     return ""
 
 if __name__ == '__main__':
