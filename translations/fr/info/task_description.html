@@ -1,0 +1,53 @@
+<p class="story">
+    "O&ugrave; un homme sage cache-t-il une feuille ? Dans une for&ecirc;t.
+    Mais que fait-il s'il n'y a pas de for&ecirc;t ? ... Il fait pousser une for&ecirc;t pour la cacher dedans."<br>
+    -- Gilbert Keith Chesterton
+</p>
+
+<p>
+    Avez-vous d&eacute;j&agrave; essay&eacute; d'envoyer un message secret &agrave; quelqu'un sans utiliser les services postaux ?
+    Vous pouvez utiliser les journaux pour parler de votre secret. M&ecirc;me si quelqu'un trouve votre message, c'est facile de l'envoyer balader, en disant que c'est de la parano&iuml;a, une fausse th&eacute;orie du complot.
+    Une des mani&egrave;res les plus simples de cacher un message est d'utiliser les majuscules. On va trouver quelques-uns de ces messages secrets.
+</p>
+
+<p>
+    On vous donne un texte. Rassemblez toutes les lettres majuscules en un seul mot dans leur ordre d'apparition dans le texte.
+</p>
+<p>
+    Par exemple : texte =
+    "<strong>H</strong>ow are you? <strong>E</strong>h, ok. <strong>L</strong>ow or <strong>L</strong>ower?
+    <strong>O</strong>hhh.",
+    si on rassemble toutes les majuscules, on obtient le message "HELLO".
+</p>
+
+<p>
+    <strong>Entr&eacute;e : </strong> Un texte en tant que chaine de caract&egrave;res (unicode).
+</p>
+
+<p>
+    <strong>Sortie : </strong> Le message secret en tant que chaine de caract&egrave;res ou chaine vide.
+</p>
+
+
+<div class="for_info_only">
+
+    <p>
+        <strong>Exemple :</strong>
+    </p>
+    <pre class="brush: python">
+find_message("How are you? Eh, ok. Low or Lower? Ohhh.") == "HELLO"
+find_message("hello world!") == ""
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>&Agrave; quoi cela sert : </strong>
+    C'est un exercice simple pour travailler sur des chaines de caract&egrave;res :
+    it&eacute;rer, reconna&icirc;tre et concat&eacute;ner.
+</p>
+
+<p>
+    <strong>Pr&eacute;condition :</strong>
+    0 &lt; len(texte) &le; 1000<br>
+    all(car in string.printable for car in texte)
+</p>
