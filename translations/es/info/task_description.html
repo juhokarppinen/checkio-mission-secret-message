@@ -1,0 +1,53 @@
+<p class="story">
+    "Dónde un hombre sabio esconde una hoja? En el bosque.
+    Pero que hace él si no hay bosque? ... Él hace crecer un bosque para ocultarla ahí.<br>
+    -- Gilbert Keith Chesterton
+</p>
+
+<p>
+    Alguna vez intentaste enviar un mensaje secreto a alguien sin usar el servicio postal? Podrías usar periódicos para
+    decir tu secreto. Incluso si alguien encuentra tu mensaje, es fácil quitarselos de encima y eso es paranoía y una
+    falsa teoría de conspiración. Una de las maneras más simples de esconder un mensaje secreto es usar letras mayúsculas.
+    Encontremos algunos de esos mensajes secretos.
+</p>
+
+<p>
+    Se te da tramo de texto. Reune todas las letras mayúsculas en una palabra en el orden que aparecen en el texto.
+</p>
+<p>
+    Por ejemplo: texto =
+    "<strong>H</strong>ow are you? <strong>E</strong>h, ok. <strong>L</strong>ow or <strong>L</strong>ower?
+    <strong>O</strong>hhh.",
+    Si recolectqamos todas las letras mayúsculas, obtenemos el mensaje "HELLO".
+</p>
+
+<p>
+    <strong>Entrada: </strong> Un texto como cadena de carácteres (unicode).
+</p>
+
+<p>
+    <strong>Salida: </strong> El mensaje secreto como una cadena de carácteres o una cadena vacia.
+</p>
+
+
+<div class="for_info_only">
+
+    <p>
+        <strong>Ejemlpo:</strong>
+    </p>
+    <pre class="brush: python">
+find_message("How are you? Eh, ok. Low or Lower? Ohhh.") == "HELLO"
+find_message("hello world!") == ""
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Cómo se usa: </strong>
+    Este es un ejercicio simple para trabajar con cadenas de carácteres: iterar, reconocer y concatenar.
+</p>
+
+<p>
+    <strong>Precondición:</strong>
+    0 &lt; len(text) &le; 1000<br>
+    all(ch in string.printable for ch in text)
+</p>
