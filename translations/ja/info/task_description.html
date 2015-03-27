@@ -1,0 +1,74 @@
+<p class="story">
+  「賢い人はどこに葉を隠す？その森の中でだ。
+    しかし森がなかったら彼はどうするのだ？
+    …彼はそれを隠すために森を育てる」<br>
+    -- ギルバート・ケイス・チェスタートン
+</p>
+
+<!-- <p class="story">
+    "Where does a wise man hide a leaf? In the forest.
+    But what does he do if there is no forest? ... He grows a forest to hide it in."<br>
+    -- Gilbert Keith Chesterton
+</p> -->
+
+<p>
+  郵便を使わずに誰かに秘密のメッセージを送ったことがありますか？
+  あなたは秘密を教えるために新聞を使うことが出来る。
+  もし誰かがあなたのメッセージを見つけたとしても、その偏執さや偽の海賊理論をはねのけるのは容易い。
+  秘密のメッセージを隠す最も簡単な方法の一つは大文字を使うことです。これらの秘密のメッセージを探してみましょう。
+</p>
+
+<!-- <p>
+    Ever tried to send a secret message to someone without using the postal service? You could use newspapers to tell
+    your secret. Even if someone finds your message, it’s easy to brush them off and that its paranoia and a bogus
+    piracy theory. One of the simplest ways to hide a secret message is to use capital letters. Let's find some of
+    these secret messages.
+</p> -->
+
+<p>
+  あなたはテキストの塊を与えられます。一つの単語のすべての大文字を順番に合わせるとテキストが現れます。
+</p>
+<!-- <p>
+    You are given a chunk of text. Gather all capital letters in one word in the order that they appear in the text.
+</p> -->
+<p>
+    例えば text =
+    "<strong>H</strong>ow are you? <strong>E</strong>h, ok. <strong>L</strong>ow or <strong>L</strong>ower?
+    <strong>O</strong>hhh.",
+    の時、大文字を集めると"HELLO"というメッセージが得られます。
+</p>
+
+<p>
+    <strong>入力 </strong> 文字列(unicode) のテキスト
+</p>
+
+<p>
+    <strong>出力 </strong> 秘密のメッセージの文字列か、空の文字列
+</p>
+
+
+<div class="for_info_only">
+
+    <p>
+        <strong>例</strong>
+    </p>
+    <pre class="brush: python">
+find_message("How are you? Eh, ok. Low or Lower? Ohhh.") == "HELLO"
+find_message("hello world!") == ""
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>どうやって使われるか </strong>
+    これは文字列を扱う単純な練習（反復、認識、連結）です。
+</p>
+<!-- <p class="for_info_only">
+    <strong>How it is used: </strong>
+    This is a simple exercise in working with strings: iterate, recognize and concatenate.
+</p> -->
+
+<p>
+    <strong>事前条件</strong>
+    0 &lt; len(text) &le; 1000<br>
+    all(ch in string.printable for ch in text)
+</p>
