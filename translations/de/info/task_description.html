@@ -1,39 +1,40 @@
 <p class="story">
-    "Where does a wise man hide a leaf? In the forest.
-    But what does he do if there is no forest? ... He grows a forest to hide it in."<br>
-    -- Gilbert Keith Chesterton
+    "Wo versteckt ein Weiser Mann ein Blatt? Im Wald.
+    Aber was macht er, wenn kein Wald da ist? ... Er pflanzt einen Wald um es dort verstecken."<br>
+    -- Gilbert Keith Chesterton (frei übersetzt)
 </p>
 
 <p>
-    Ever tried to send a secret message to someone without using the postal service? You could use newspapers to tell
-    your secret. Even if someone finds your message, it’s easy to brush them off and that its paranoia and a bogus
-    conspiracy theory. One of the simplest ways to hide a secret message is to use capital letters. Let's find some of
-    these secret messages.
+    Schon mal versucht eine geheime Nachricht an jemanden zu senden, ohne die Post zu benutzen? Du könntest Zeitungen
+    nutzen um deine Nachricht zu übermitteln.
+    Selbst wenn jemand Deine Nachricht findet, ist es leicht, ihn abzuwimmeln und ihm Paranoia und einen Hang zu
+    verrückten Verschwörungstheorien zu unterstellen. Einer der einfachsten Wege eine Nachricht zu verstecken sind
+    Großbuchstaben. Lass uns ein paar dieser geheimen Nachrichten finden.
 </p>
 
 <p>
-    You are given a chunk of text. Gather all capital letters in one word in the order that they appear in the text.
+    Gegeben wird ein Textabschnitt. Sammle alle Großbuchstaben der Wörter in der Reihenfolge, in der sie im Text erscheinen.
 </p>
 <p>
-    For example: text =
-    "<strong>H</strong>ow are you? <strong>E</strong>h, ok. <strong>L</strong>ow or <strong>L</strong>ower?
+    Ein Beispiel:<br>
+    text = "<strong>H</strong>ow are you? <strong>E</strong>h, ok. <strong>L</strong>ow or <strong>L</strong>ower?
     <strong>O</strong>hhh.",
-    if we collect all of the capital letters, we get the message "HELLO".
+    wenn man alle Großbuchstaben sammelt, erhält man "HELLO".
 </p>
 
 <p>
-    <strong>Input: </strong> A text as a string (unicode).
+    <strong>Eingabe: </strong>Ein Text als String (unicode).
 </p>
 
 <p>
-    <strong>Output: </strong> The secret message as a string or an empty string.
+    <strong>Ausgabe: </strong> Die geheime Nachricht als String oder einen leeren String.
 </p>
 
 
 <div class="for_info_only">
 
     <p>
-        <strong>Example:</strong>
+        <strong>Beispiele:</strong>
     </p>
     <pre class="brush: python">
 {% if interpreter.slug == "js-node" %}findMessage{% else %}find_message{% endif %}("How are you? Eh, ok. Low or Lower? Ohhh.") == "HELLO"
@@ -42,12 +43,12 @@
 </div>
 
 <p class="for_info_only">
-    <strong>How it is used: </strong>
-    This is a simple exercise in working with strings: iterate, recognize and concatenate.
+    <strong>Wozu das gut ist: </strong>
+    Dies ist eine einfache Übung zur Arbeit mit Strings: Iterieren, Erkennen und Zusammenfügen.
 </p>
 
 <p>
-    <strong>Precondition:</strong>
+    <strong>Bedingungen:</strong>
     0 &lt; len(text) &le; 1000<br>
     all(ch in string.printable for ch in text)
 </p>
