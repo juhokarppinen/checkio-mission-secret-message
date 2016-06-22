@@ -38,7 +38,10 @@ api.add_listener(
     ON_CONNECT,
     CheckiOReferee(
         tests=TESTS,
-        function_name="find_message"
+        function_name={
+            "python": "find_message",
+            "js": "findMessage"
+        }
         # checker=None,  # checkers.float.comparison(2)
         # add_allowed_modules=[],
         # add_close_builtins=[],
