@@ -1,0 +1,53 @@
+<p class="story">
+    "Onde um homem sábio esconde uma folha? Na floresta.
+    Mas o que ele faz se não tem floresta? ... Ele faz crescer uma floresta para escondê-la."<br>
+    -- Gilbert Keith Chesterton
+</p>
+
+<p>
+    Já tentou enviar uma mensagem secreta para alguém sem usar o Correios? Você poderia usar jornal para contar
+    seu segredo. Mesmo que alguém encontre sua mensagem, é fácil ignorá-lo e dizer que é paranóia e falsa
+    teoria da conspiração. Uma das formas mais simples de esconder uma mensagem secreta é usar letras maiúsculas. Vamos encontrar algumas
+    dessas mensagens secretas.
+</p>
+
+<p>
+    Lhe é dado um trecho de um texto. Junte todas as letras maiúsculas em uma palavra na ordem em que aparece no texto.
+</p>
+<p>
+    Por exemplo: text =
+    "<strong>H</strong>ow are you? <strong>E</strong>h, ok. <strong>L</strong>ow or <strong>L</strong>ower?
+    <strong>O</strong>hhh.",
+    se nós juntarmos todas as letras maiúsculas, temos a mensagem "HELLO".
+</p>
+
+<p>
+    <strong>Entrada: </strong> Um texto como string (unicode).
+</p>
+
+<p>
+    <strong>Saída: </strong> A mensagem secreta como string ou uma string vazia.
+</p>
+
+
+<div class="for_info_only">
+
+    <p>
+        <strong>Exemplo:</strong>
+    </p>
+    <pre class="brush: python">
+find_message("How are you? Eh, ok. Low or Lower? Ohhh.") == "HELLO"
+find_message("hello world!") == ""
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Onde é usado: </strong>
+    Este é um exercício simples de strings: iterar, reconhecer e concatenar.
+</p>
+
+<p>
+    <strong>Precondições:</strong>
+    0 &lt; len(text) &le; 1000<br>
+    all(ch in string.printable for ch in text)
+</p>
