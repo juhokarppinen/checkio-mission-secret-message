@@ -1,0 +1,54 @@
+<p class="story">
+    "Wo versteckt ein Weiser Mann ein Blatt? Im Wald.
+    Aber was macht er, wenn kein Wald da ist? ... Er pflanzt einen Wald um es dort verstecken."<br>
+    -- Gilbert Keith Chesterton (frei übersetzt)
+</p>
+
+<p>
+    Schon mal versucht eine geheime Nachricht an jemanden zu senden, ohne die Post zu benutzen? Du könntest Zeitungen
+    nutzen um deine Nachricht zu übermitteln.
+    Selbst wenn jemand Deine Nachricht findet, ist es leicht, ihn abzuwimmeln und ihm Paranoia und einen Hang zu
+    verrückten Verschwörungstheorien zu unterstellen. Einer der einfachsten Wege eine Nachricht zu verstecken sind
+    Großbuchstaben. Lass uns ein paar dieser geheimen Nachrichten finden.
+</p>
+
+<p>
+    Gegeben wird ein Textabschnitt. Sammle alle Großbuchstaben der Wörter in der Reihenfolge, in der sie im Text erscheinen.
+</p>
+<p>
+    Ein Beispiel:<br>
+    text = "<strong>H</strong>ow are you? <strong>E</strong>h, ok. <strong>L</strong>ow or <strong>L</strong>ower?
+    <strong>O</strong>hhh.",
+    wenn man alle Großbuchstaben sammelt, erhält man "HELLO".
+</p>
+
+<p>
+    <strong>Eingabe: </strong>Ein Text als String (unicode).
+</p>
+
+<p>
+    <strong>Ausgabe: </strong> Die geheime Nachricht als String oder einen leeren String.
+</p>
+
+
+<div class="for_info_only">
+
+    <p>
+        <strong>Beispiele:</strong>
+    </p>
+    <pre class="brush: python">
+{% if interpreter.slug == "js-node" %}findMessage{% else %}find_message{% endif %}("How are you? Eh, ok. Low or Lower? Ohhh.") == "HELLO"
+{% if interpreter.slug == "js-node" %}findMessage{% else %}find_message{% endif %}("hello world!") == ""
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Wozu das gut ist: </strong>
+    Dies ist eine einfache Übung zur Arbeit mit Strings: Iterieren, Erkennen und Zusammenfügen.
+</p>
+
+<p>
+    <strong>Bedingungen:</strong>
+    0 &lt; len(text) &le; 1000<br>
+    all(ch in string.printable for ch in text)
+</p>
