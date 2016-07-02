@@ -1,0 +1,56 @@
+<p class="story">
+    "Dove nasconde una foglia un uomo saggio? Nella foresta.
+    Ma cosa fa se non c'&egrave; una foresta? ... Cresce una foresta per nascondercela."<br>
+    -- Gilbert Keith Chesterton
+</p>
+
+<p>
+    Hai mai provato a mandare un messaggio segreto a qualcuno usando il servizio postale?
+    Potresti usare il giornale per trasmettere il tuo segreto.
+    Anche se qualcuno lo trovasse sarebbe facile sminuire la cosa, dire che &egrave; paranoia o una
+    sciocca teoria cospirazionista.
+    Uno dei modi pi&ugrave; semplici per nascondere un messaggio segreto &egrave; usare le maiuscole.
+    Cerchiamo un po' di questi messaggi segreti.
+</p>
+
+<p>
+    Ti viene dato un blocco di testo.
+    Raccogli tutte le maiuscole in una parola nello stesso ordine con cui compaiono nel testo.
+</p>
+<p>
+    Ad esempio: text =
+    "<strong>H</strong>ow are you? <strong>E</strong>h, ok. <strong>L</strong>ow or <strong>L</strong>ower?
+    <strong>O</strong>hhh.",
+    se raccogliamo tutte le maiuscole troviamo il messaggio "HELLO".
+</p>
+
+<p>
+    <strong>Input: </strong> Un testo come stringa (unicode).
+</p>
+
+<p>
+    <strong>Output: </strong> Il messaggio segreto come stringa oppure una stringa vuota.
+</p>
+
+
+<div class="for_info_only">
+
+    <p>
+        <strong>Esempio:</strong>
+    </p>
+    <pre class="brush: python">
+{% if interpreter.slug == "js-node" %}findMessage{% else %}find_message{% endif %}("How are you? Eh, ok. Low or Lower? Ohhh.") == "HELLO"
+{% if interpreter.slug == "js-node" %}findMessage{% else %}find_message{% endif %}("hello world!") == ""
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Come si usa: </strong>
+    Questo &egrave; un semplice esercizio pe lavorare con le stringhe: iterare, riconoscere e concatenare.
+</p>
+
+<p>
+    <strong>Prerequisiti:</strong>
+    0 &lt; len(text) &le; 1000<br>
+    all(ch in string.printable for ch in text)
+</p>
