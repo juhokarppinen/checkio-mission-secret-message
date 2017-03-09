@@ -1,0 +1,62 @@
+<div style="text-align: center">
+    <img src="{{MEDIA}}title.png" style="max-height: 350px">
+</div>
+
+<p class="story", style="direction:rtl">
+  "یک انسان با هوش کجا یک برگ را مخفی میکند؟ در یک جنگل"<br>
+    "اما اگر جنگلی نبود چه؟   ... او یک جنگل درست میکند تا برگ را پنهان کند."<br>
+    -- Gilbert Keith Chesterton
+</p>
+
+<p style="direction:rtl">
+  تا به حال تلاش کردید پیام مخفی به کسی بدون استفاده از پست بفرستید؟
+  میتوانید از یک روزنامه کمک بگیرید. اگر کسی پیام شما را کرد به راحتی میتوانید او را نادیده بگیرید ،
+  او را به
+  پارانویا و توهم تئوری توطئه متهم کنید.
+  یکی از ساده ترن راه های مخفی کرد پیام استفاده از حروف بزرگ است.
+  حالا بیاید چند پیام مخفی پیدا کنیم!!!
+</p>
+
+<p style="direction:rtl">
+    تمام حروف بزرگ در متن را به ترتیب در یه کلمه کامل کنید
+</p>
+<p style="direction:rtl">
+    برای مثال =
+    "<strong>H</strong>ow are you? <strong>E</strong>h, ok. <strong>L</strong>ow or <strong>L</strong>ower?
+    <strong>O</strong>hhh.",<br>
+    اگر همه کلمات بزرگ متن را در کنار هم قرار دهیم پیام "HELLO" را بدست می آوریم
+</p>
+
+<p style="direction:rtl">
+    <strong>Input(ورودی): </strong> یه متن در قالب یک رشته (string)
+</p>
+
+<p style="direction:rtl">
+    <strong>Output(خروجی): </strong> پیام مخفی به عنوان یک رشته یا یک string خالی
+</p>
+
+
+<div class="for_info_only">
+
+    <p style="direction:rtl">
+        <strong>مثال:</strong>
+    </p>
+    <pre class="brush: python">
+{% if interpreter.slug == "js-node" %}findMessage{% else %}find_message{% endif %}("How are you? Eh, ok. Low or Lower? Ohhh.") == "HELLO"
+{% if interpreter.slug == "js-node" %}findMessage{% else %}find_message{% endif %}("hello world!") == ""
+    </pre>
+</div>
+
+<p class="for_info_only" style="direction:rtl">
+    <strong>استفاده: </strong>
+    تمرین کار با string
+    ،‌تکرار، یافتن و پیوست دادن
+
+</p>
+
+<p>
+<p style="direction:rtl">
+    <strong>فرض:</strong></p>
+    0 &lt; len(text) &le; 1000<br>
+    all(ch in string.printable for ch in text)
+</p>
