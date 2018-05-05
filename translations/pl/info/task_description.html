@@ -1,0 +1,56 @@
+<div style="text-align: center">
+    <img src="{{MEDIA}}title.png" style="max-height: 350px">
+</div>
+
+<p class="story">
+	"Gdzie mądry człowiek chowa liść? W lesie.
+	Ale co robi, gdy nie ma lasu? ... Sadzi las, że tam ukryć liść."<br>
+    -- Gilbert Keith Chesterton
+</p>
+
+<p>
+	Czy probowaliście wysłać sekretną wiaomość do kogoś używając poczty? Można by użyć gazety, żeby powiedzieć Twój sekret.
+	Nawet jeśli ktoś znajdzię Twoją wiadomość, łatwo go zbyć, że to jest paranoja i fałszywa teoria spiskowa.
+	Najprostszy sposób, żeby ukryć wiadomość, to użyć wielkich liter. Znajdźmy jakieś ukryte wiadomości!
+</p>
+
+<p>
+	Na wejściu jest kawałek tekstu. Zbierz wszystkie wielkie litery w jeden wyraz w kolejności, w której pojawiły się w tekście.
+</p>
+<p>
+    Na przykład: tekst =
+    "<strong>H</strong>ow are you? <strong>E</strong>h, ok. <strong>L</strong>ow or <strong>L</strong>ower?
+    <strong>O</strong>hhh.",
+	jeżeli zbierzemy wszystkie wielkie litery, dostaniemy wiadomość "HELLO".
+</p>
+
+<p>
+    <strong>Wejście: </strong> Tekst jako napis (unicode).
+</p>
+
+<p>
+    <strong>Wyjście: </strong> Sekrenta wiadomość jako napis lub pusty napis.
+</p>
+
+
+<div class="for_info_only">
+
+    <p>
+        <strong>Przykład:</strong>
+    </p>
+    <pre class="brush: python">
+{% if interpreter.slug == "js-node" %}findMessage{% else %}find_message{% endif %}("How are you? Eh, ok. Low or Lower? Ohhh.") == "HELLO"
+{% if interpreter.slug == "js-node" %}findMessage{% else %}find_message{% endif %}("hello world!") == ""
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Korzyści: </strong>
+	To jest proste zadanie na pracę z napisami: iteracja, reorganizacja, łączenie.
+</p>
+
+<p>
+    <strong>Założenia:</strong>
+    0 &lt; len(tekst) &le; 1000<br>
+    dla-każego(ch in string.printable for ch in tekst)
+</p>
