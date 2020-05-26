@@ -1,17 +1,19 @@
-"use strict";
+import assert from "assert";
 
-function findMessage(data) {
-    return data;
+function findMessage(message: string) -> string {
+    // your code here
+    return message;
 }
 
-var assert = require('assert');
+console.log('Example:');
+console.log(findMessage(('How are you? Eh, ok. Low or Lower? '
+ + 'Ohhh.')));
 
-if (!global.is_checking) {
-    console.log('Example:')
-    console.log(findMessage("How are you? Eh, ok. Low or Lower? Ohhh."))
+// These "asserts" are used for self-checking
+assert.equal(findMessage(('How are you? Eh, ok. Low or Lower? '
+ + 'Ohhh.')), 'HELLO');
+assert.equal(findMessage('hello world!'), '');
+assert.equal(findMessage('HELLO WORLD!!!'), 'HELLOWORLD');
+
+console.log("Coding complete? Click 'Check' to earn cool rewards!");
     
-    assert.equal(findMessage("How are you? Eh, ok. Low or Lower? Ohhh."), "HELLO", "hello");
-    assert.equal(findMessage("hello world!"), "", "Nothing");
-    assert.equal(findMessage("HELLO WORLD!!!"), "HELLOWORLD", "Capitals");
-    console.log("Coding complete? Click 'Check' to review your tests and earn cool rewards!");
-}

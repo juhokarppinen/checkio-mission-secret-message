@@ -38,10 +38,19 @@
     <p>
         <strong>Przykład:</strong>
     </p>
-    <pre class="brush: python">
-{% if interpreter.slug == "js-node" %}findMessage{% else %}find_message{% endif %}("How are you? Eh, ok. Low or Lower? Ohhh.") == "HELLO"
-{% if interpreter.slug == "js-node" %}findMessage{% else %}find_message{% endif %}("hello world!") == ""
-    </pre>
+    {% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">findMessage(('How are you? Eh, ok. Low or Lower? '
+ 'Ohhh.')) == 'HELLO'
+findMessage('hello world!') == ''
+findMessage('HELLO WORLD!!!') == 'HELLOWORLD'
+</pre>
+{% else %}
+<pre class="brush: python">find_message(('How are you? Eh, ok. Low or Lower? '
+ 'Ohhh.')) == 'HELLO'
+find_message('hello world!') == ''
+find_message('HELLO WORLD!!!') == 'HELLOWORLD'
+</pre>
+{% endif %}
 </div>
 
 <p class="for_info_only">
