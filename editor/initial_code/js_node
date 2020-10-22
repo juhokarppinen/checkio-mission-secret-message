@@ -1,6 +1,6 @@
 import assert from "assert";
 
-function findMessage(message: string) -> string {
+function findMessage(message: string): string {
     // your code here
     return message;
 }
